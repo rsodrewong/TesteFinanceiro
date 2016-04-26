@@ -1,0 +1,53 @@
+<html dir="ltr"><head></head><body contenteditable="true">
+
+        <title>TODO supply a title</title>
+        <meta charset="ISO-8859-1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+        <div class="receita">
+            <form id="orderForm" autocomplete="on">
+                <fieldset>
+                    <legend> Receita </legend>
+                    <p>
+                        <label>Descrição:
+                            <input id="fullname" name="descricao" type="text" placeholder="Entre com descrição da receita" autofocus="" required="" size="50">
+                        </label>
+                    </p>
+                    <p>
+                        <label>Valor:
+                            <input id="val" name="valor" type="val" required="" size="25" placeholder="Valor: 0,00" pattern="([0-9]{1}(-[0-9]{3})(-[0-9]{3})(-[0-9]{4}))">
+                        </label>
+                    </p>
+                    <p>
+                        <label>E-mail address:
+                            <input id="email" name="email" type="email" placeholder="Enter your email address" required="" size="50">
+                        </label>
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <legend> Books </legend>
+                    <p>
+                        <label>
+                            <input type="text" name="productlist" list="books" size="45">
+                            <datalist id="books">
+                                <option value="HTML5 Canvas by Steve Fulton &amp; Jeff Fulton">
+                                </option><option value="JavaScript: The Definitive Guide by David Flanagan">
+                                </option><option value="HTML5 Geolocation by Anthony T. Holdener III">
+                                </option><option value="Supercharged JavaScript Graphics by Raffaele Cecco">
+                                </option><option value="HTML5: Up and Running by Mark Pilgrim">
+                            </option></datalist>
+                        </label>
+                        <label>
+                            Quantity (Maximum 5): <input name="form_number" id="form_number" type="number" min="1" max="5">
+                        </label>
+                    </p>
+                </fieldset>
+                <input type="submit" value="Submit">
+            </form>  
+
+
+        </div>
+
+
+    </body></html>
